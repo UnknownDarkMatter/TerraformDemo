@@ -2,3 +2,4 @@ src/.vs/
 src/FileExchange.MVC/bin
 src/FileExchange.MVC/obj
 src/FileExchange.MVC/wwwroot
+/.vs
