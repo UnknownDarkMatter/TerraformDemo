@@ -1,0 +1,7 @@
+    "rename-build-files": "renamer -f '/\\.[^\\\\.]+\\.chunk\\./gmi\\' --replace \"\" build/**",
+    "replace-build-files-text" : "replace-in-file '\/\\.[^\\\\.]+\\.chunk\\.\/g' '.' build\/** --isRegex --verbose",
+    "test-rename": "renamer --find '/[0-9]+\\.*[0-9]+/gmi' --replace \"\" build/**",
+	
+~/wwwroot/CSS
+	
+	
