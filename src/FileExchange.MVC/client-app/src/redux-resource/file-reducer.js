@@ -27,4 +27,3 @@ const fileListReducer = (state = defaultFileList, action) => {
 	}
 }
 
-export default fileListReducer;
