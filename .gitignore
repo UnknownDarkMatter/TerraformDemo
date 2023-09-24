@@ -3,3 +3,9 @@ src/FileExchange.MVC/bin
 src/FileExchange.MVC/obj
 src/FileExchange.MVC/wwwroot
 /.vs
+/src/FileExchange.Business/obj
+/src/FileExchange.Data/obj
+/src/FileExchange.Entities/obj
+/src/FileExchange.Business/bin/Debug/net6.0
+/src/FileExchange.Data/bin/Debug/net6.0
+/src/FileExchange.Entities/bin/Debug/net6.0
