@@ -4,16 +4,10 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { configureStore } from '@reduxjs/toolkit'
-import fileListReducer from './redux-resource/file-reducer';
+import store from './redux-resource/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-export const store = configureStore({
-  reducer: {
-    fileList: fileListReducer,
-  },
-})
 
 root.render(
   <React.StrictMode>

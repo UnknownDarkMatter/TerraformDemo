@@ -9,7 +9,6 @@ const FileComponent = (props) => {
                             <div class="line">
                                    <BsFileEarmark size={30} />
                                    <div class="file-name">{props.file.friendlyName }</div>
-                                   
                             </div>
                      </div>
               </div>
