@@ -7,7 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileExchange.Business\FileExchange.Business.csproj" />
+    <ProjectReference Include="..\FileExchange.Data\FileExchange.Data.csproj" />
+    <ProjectReference Include="..\FileExchange.Entities\FileExchange.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="client-app\src\components\" />
+    <Folder Include="client-app\src\services\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
 
-
+Server=localhost;Port=5432;Database=fileexchange;User ID=postgres;Password=postgres;Trust Server Certificate=true;SslMode=prefer;
 	
 	
