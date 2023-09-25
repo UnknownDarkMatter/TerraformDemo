@@ -17,8 +17,8 @@ namespace FileExchange.Data.Migrations
                 {
                     id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    FriendlyName = table.Column<string>(type: "text", nullable: false),
-                    HashedName = table.Column<string>(type: "text", nullable: false)
+                    FriendlyName = table.Column<string>(type: "text", nullable: true),
+                    HashedName = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {

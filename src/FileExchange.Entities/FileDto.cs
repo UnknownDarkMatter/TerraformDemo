@@ -13,7 +13,7 @@ public class FileDto
 {
     [Key]
     [Column("id")]
-    public int Id { get; set; }
-    public string FriendlyName { get; set; }
-    public string HashedName { get; set; }
+    public int? Id { get; set; }
+    public string? FriendlyName { get; set; }
+    public string? HashedName { get; set; }
 }

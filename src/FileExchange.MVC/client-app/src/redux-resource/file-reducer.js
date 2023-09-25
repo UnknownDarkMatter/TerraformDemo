@@ -1,11 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import  axios from 'axios';
-import {GET_FILES} from './constants';
+import  {getFilesFromApi} from '../services/file-service';
 
-const defaultFileList = [{
-	friendlyName:'my file',
-	hashedName:''
-  }];
+const defaultFileList = [];
 
 const initialState = {
   data: defaultFileList,
@@ -14,7 +10,7 @@ const initialState = {
 };
 
 export const fetchFilesDataThunk = createAsyncThunk('files/getAll', async (_, thunkApi) => {
-	  const response = await axios(`${process.env.REACT_APP_BACKEND_BASE_URL}File/GetAll`);
+	  const response = await getFilesFromApi();
 	  //thunkApi.dispatch(getFiles(response.data, GET_FILES));
 	  return response.data;
 });
@@ -24,14 +20,7 @@ export const filesSlice = createSlice({
   initialState,
   reducers: {
     getFiles: (state = defaultFileList, action) => {
-			switch(action.type) {	
-				case GET_FILES:{
-					return [...state, action.payload];
-				}
-				default:{
-					return [...state, action.payload];
-				}
-			}
+		return [...state, action.payload]
 		},
 	},
 	extraReducers: (builder) => {
