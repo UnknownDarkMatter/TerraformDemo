@@ -9,3 +9,6 @@ src/FileExchange.MVC/wwwroot
 /src/FileExchange.Business/bin/Debug/net6.0
 /src/FileExchange.Data/bin/Debug/net6.0
 /src/FileExchange.Entities/bin/Debug/net6.0
+/src/FileExchange.Common/bin/Debug/net6.0
+/src/FileExchange.Common/obj
+/src/FileExchange.Common/obj/Debug/net6.0/ref/FileExchange.Common.dll
